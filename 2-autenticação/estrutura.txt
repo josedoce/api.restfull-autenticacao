@@ -1,0 +1,28 @@
+*****tecnologias usadas****
+->nodejs
+->express
+->mongo
+****pacotes usados****
+->express //gerenciamento de rotas
+->mongoose //conexão com o mongodb
+->body-parser //captura de dados via requisição
+->bcryptjs //para encriptação de senhas
+->jsonwebtoken //para criação de tokens de autenticação
+
+****funções****
+->estrutura
+->cadastro
+->autenticação
+
+*****estrutura de pastas da api*****
+/ raiz
+    *node_modules
+    *package-lock.json
+    *package.json
+    /src
+        /index.js
+        /database /conexão com o banco de dados
+        /models /criação de dados
+        /controllers /controle de autenticação da api
+        /config /onde esta a hash token da aplicação que será usada como base de autenticação
+        /middlewares /verificador de autenticidade
