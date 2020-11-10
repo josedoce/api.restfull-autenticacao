@@ -1,0 +1,24 @@
+*****tecnologias usadas****
+->nodejs
+->express
+->mongo
+****pacotes usados****
+->express //gerenciamento de rotas
+->mongoose //conexão com o mongodb
+->body-parser //captura de dados via requisição em formato json
+->bcryptjs //para encriptação de senhas
+
+****funções****
+->estrutura
+->cadastro
+
+*****estrutura de pastas da api*****
+/ raiz
+    *node_modules
+    *package-lock.json
+    *package.json
+    /src
+        /index.js
+        /database /conexão com o banco de dados
+        /models /criação de dados
+        /controllers /controle de autenticação da api
