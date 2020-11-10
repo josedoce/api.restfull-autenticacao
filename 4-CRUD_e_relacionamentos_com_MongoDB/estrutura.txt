@@ -1,0 +1,39 @@
+*****tecnologias usadas****
+->nodejs
+->javascript
+->mongo
+****pacotes usados****
+->express //gerenciamento de rotas
+->mongoose //conexão com o mongodb
+->body-parser //captura de dados via requisição
+->bcryptjs //para encriptação de senhas
+->jsonwebtoken //para criação de tokens de autenticação
+->fs //para manipular arquivos e pastas
+->path //para lidar com caminhos
+->nodemailer //para enviar emails de recuperação de senha
+->nodemailer-express-handlebars //template engine para emails
+->crypto //usado para criação de token com tempo de inspiração
+
+****funções****
+->estrutura
+->cadastro
+->autenticação
+->envio de emails
+->recuperação de senhas
+->CRUD e relacionamentos com MongoDB
+
+*****estrutura de pastas da api*****
+/ raiz
+    *node_modules
+    *package-lock.json
+    *package.json
+    /src
+        /app /*parte logica*/ organizada com modulos fs e path
+            app/controllers /controle de autenticação da api
+            app/middlewares /verificador de autenticidade
+            app/models /criação de dados
+        src/index.js
+        src/database /conexão com o banco de dados
+        src/config /onde esta a hash token da aplicação que será usada como base de autenticação
+        src/modules /onde estão configurações não relacionadas a aplicação
+        src/resouces /onde ficará templates engines
